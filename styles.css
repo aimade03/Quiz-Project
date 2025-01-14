@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(rgb(132, 126, 126) 0%, #969494 50%, #d5cccc 75%, #ffffff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-brand span {
+    color: #007BFF;
+}
+
+
+.footer {
+    background: linear-gradient(rgb(255, 255, 255) 0%, #d5cccc 50%, #969494 75%, #898787);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    color: #333;
+    margin-top: auto;
+    font-size: 16px;
+}
+
+
+.quiz-container {
+    max-width: 600px;
+    margin: 50px auto ;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quiz-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.options input {
+    margin-right: 10px;
+}
+
+/* Button Styles */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.submit-btn:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 3px;
+}
+
+/* Result Section */
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    padding: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 20px;
+    }
+
+    .quiz-header h1 {
+        font-size: 24px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
