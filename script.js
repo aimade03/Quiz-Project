@@ -58,7 +58,7 @@ btn.addEventListener('click', () => {
         result.innerHTML = `
         <div class=" d-block ">
         <h1 class="text-center fw-bold" ; > Dein Rank ist : ${Rank} </h1> 
-        <a href="welcome.html" class="btn btn-primary d-flex justify-content-center " style="text-decoration: none;">Return</a>
+        <a href="index.html" class="btn btn-primary d-flex justify-content-center " style="text-decoration: none;">Return</a>
         </div
         `
 
